@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="notes_app.css" />
+    <title>Notes App</title>
+  </head>
+  <body>
+    <!-- Font Selector -->
+    <div class="font-selector">
+      <label for="fontSelect">Choose Font:</label>
+      <select id="fontSelect">
+        <option value="Poppins">Poppins</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+      </select>
+    </div>
+
+    <!-- Highlight Color Selector -->
+    <div class="highlight-selector">
+      <label for="highlightSelect">Highlight Color:</label>
+      <select id="highlightSelect">
+        <option value="yellow">Yellow</option>
+        <option value="lightblue">Light Blue</option>
+        <option value="lightgreen">Light Green</option>
+        <option value="pink">Pink</option>
+      </select>
+    </div>
+
+    <!-- Add Note Button -->
+    <button class="add" id="add">
+      <i class="fas fa-plus"></i> Add note
+    </button>
+
+    <!-- Notes Container -->
+    <div class="notes-container" id="notes-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/1.2.2/marked.min.js"></script>
+    <script src="notes_app.js"></script>
+  </body>
+</html>
